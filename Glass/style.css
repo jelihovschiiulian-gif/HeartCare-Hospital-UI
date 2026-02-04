@@ -1,0 +1,189 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: 'Inter', sans-serif;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('images/beautiful-flower-nature.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    
+
+}
+
+
+
+.nav-bar ul{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.logo{
+    position: absolute;
+    width: 35px;
+    left: 30px;
+    top: 20px;
+    z-index: 10;
+}
+
+
+.nav-bar a{
+    text-decoration: none;
+    font-size: 15px ;
+    color: white;
+    
+   
+    
+}
+
+.nav-bar li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    margin-top: 30px;
+    
+}
+
+.main-title{
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+.title{
+    display: block;
+    font-weight: 500;
+    font-size: 100px;
+    margin-top: 135px;
+    text-align: justify;
+    line-height: 80px;
+    letter-spacing: -2px;
+    color: white;
+
+}
+
+.subtitle{
+    text-align: center;
+    font-weight: 200;
+    font-size: 18px;
+    line-height: 1.7;
+        color: white;
+
+}
+
+
+
+.button-before{
+    display: flex;
+    justify-content: center;
+}
+.button{
+    display: flex;
+    position: absolute;
+    width: fit-content;
+    border: solid 0.5px rgb(162, 156, 156);
+    border-radius: 30px;
+    top: 550px;
+    padding: 15px 50px 15px 50px;
+    color: white;
+    background: rgba(237, 237, 237, 0.35);
+    backdrop-filter: blur(10);
+    box-shadow: 0 8px 32px 0 rgba(171, 171, 171, 0.37);
+
+  
+}
+
+
+
+
+
+
+.heart{
+    position: absolute;
+    width: 75px;
+    height:73px;
+    background-color: red;
+    top: 220px;
+    right: 717px;
+    border-radius: 20px;
+    background: linear-gradient(135deg,rgb(236, 236, 236) 0%, rgb(165, 165, 190) 35%, rgb(48, 67, 133) 100%);
+    backdrop-filter: blur(100);
+     box-shadow: 0 8px 32px 0 rgba(122, 155, 227, 0.37);
+    border: solid 0.1px rgb(156, 156, 162);
+
+
+}
+
+.heart-image{
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    width: 83px;
+    margin-left: -6px;
+    margin-top: -6px;
+
+}
+
+.hands{
+    margin-left: 135px;
+}
+
+.download{
+    position: absolute;
+    width: 100px;
+    height: 35px;
+    background: rgba(180, 176, 232, 0.35);
+    opacity: 0.8;
+    backdrop-filter: blur(10);
+    box-shadow: 0 8px 12px 0 rgba(171, 171, 171, 0.3);
+    margin-left: 70px;
+    margin-top: 93px; 
+    border-radius: 30px;
+    color: white;   
+    font-size: 14px;
+    text-align: center;
+}
+
+
+.download-text{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.claim{
+    z-index: 10;
+    position: relative;
+    width: 240px;
+    height: 140px;
+    bottom: 30px; 
+    left: 510px;   
+    border-radius: 30px;
+    backdrop-filter: blur(5);
+    box-shadow: 0 8px 32px 0 rgba(171, 171, 171, 0.37);
+    color: white;
+
+}
+
+.claim-text{
+    position: absolute;
+    text-align: center;
+    left: 29px;
+    top: 46px;
+    font-weight: 600;
+}
+
+
