@@ -7,12 +7,10 @@
 
 body{
     font-family: 'Inter', sans-serif;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('images/beautiful-flower-nature.jpg');
+    background-image: linear-gradient(#00000077, rgba(0, 0, 0, 0.5)), url('images/beautiful-flower-nature.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-
-    
 
 }
 
@@ -36,13 +34,31 @@ body{
 
 
 .nav-bar a{
+    position: relative;
     text-decoration: none;
     font-size: 15px ;
     color: white;
     
-   
-    
 }
+
+
+.nav-bar a::after{
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    content: " ";
+    transition: width 300ms ease;
+
+}
+.nav-bar a:hover::after{
+      width: 100%;
+
+    }
+
+
 
 .nav-bar li {
     list-style: none;
@@ -100,8 +116,17 @@ body{
     background: rgba(237, 237, 237, 0.35);
     backdrop-filter: blur(10);
     box-shadow: 0 8px 32px 0 rgba(171, 171, 171, 0.37);
+    cursor: pointer;
+    transition: transform 0.3s ease; 
 
-  
+
+}
+
+.button:hover{
+    background: rgba(237, 237, 237, 0.5);
+    box-shadow: 0 8px 32px 0 rgba(171, 171, 171, 0.5);
+    transform: scale(1.1);
+    transition: 0.3s;
 }
 
 
@@ -114,15 +139,25 @@ body{
     width: 75px;
     height:73px;
     background-color: red;
-    top: 220px;
+    top: 224px;
     right: 717px;
     border-radius: 20px;
     background: linear-gradient(135deg,rgb(236, 236, 236) 0%, rgb(165, 165, 190) 35%, rgb(48, 67, 133) 100%);
     backdrop-filter: blur(100);
      box-shadow: 0 8px 32px 0 rgba(122, 155, 227, 0.37);
     border: solid 0.1px rgb(156, 156, 162);
+    cursor: pointer;
+    transition: transform 0.7s ease; 
 
 
+
+}
+
+.heart:hover{
+    background: rgba(237, 237, 237, 0.5);
+    box-shadow: 0 8px 32px 0 rgba(171, 171, 171, 0.5);
+    transform: scale(1.1);
+    transition: background-color 3s ease;
 }
 
 .heart-image{
@@ -153,6 +188,18 @@ body{
     color: white;   
     font-size: 14px;
     text-align: center;
+    transition: transform 0.3s ease; 
+
+}
+
+.download:hover{
+    background: rgb(242, 242, 242);
+    opacity: 1;
+    color: black;
+    box-shadow: 0 8px 32px 0 rgba(171, 171, 171, 0.5);
+    transform: scale(1.1);
+    transition: 0.3s;
+    cursor: pointer;
 }
 
 
@@ -170,7 +217,7 @@ body{
     width: 240px;
     height: 140px;
     bottom: 30px; 
-    left: 510px;   
+    left: 563px;   
     border-radius: 30px;
     backdrop-filter: blur(5);
     box-shadow: 0 8px 32px 0 rgba(171, 171, 171, 0.37);
@@ -186,4 +233,58 @@ body{
     font-weight: 600;
 }
 
+.button-menu1{
+    top: 24px;
+    right: 50px;
+    position: absolute;
+    width: 42px;
+    height: 40px;
+    border-radius: 12px;
+    background-color: none;
+    border: solid 1.3px white;
+    transition: transform 0.3s ease;
+}
 
+.button-menu1:hover{
+      background: transparent;
+    box-shadow: 0 8px 32px 0 rgba(171, 171, 171, 0.5);
+    transform: scale(1.1);
+    transition: 0.3s;
+    cursor: pointer;
+
+}
+
+
+.button-profile{
+    top: 24px;
+    right: 50px;
+    position: absolute;
+    width: 42px;
+    height: 40px;
+    border-radius: 12px;
+    background-color: white;
+    right: 105px;
+    transition: transform 0.3s ease;
+
+}
+.button-profile:hover{
+     background: white;
+    box-shadow: 0 8px 32px 0 rgba(171, 171, 171, 0.5);
+    transform: scale(1.1);
+    transition: 0.3s;
+    cursor: pointer;
+
+}
+.menu-icon{
+    width: 18px;
+    display: block;
+    margin-top: 15px;
+    margin-left: 11px;
+}
+
+.profile-icon{
+    width: 18px;
+    display: block;
+    margin-top: 10px;
+    margin-left: 12px;
+}
